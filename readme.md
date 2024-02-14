@@ -160,7 +160,7 @@ This command searches for the word "bio" in all files within the ```./technical/
 grep -r --include="*.txt" "tax" ./technical/
 ```
 ![3Screenshot](f5.png)
-This command searches for the word "tax" in all Python files (```*.txt```) recursively in the ```./technical``` directory. It helps in finding tax statements across a govement docs.
+This command searches for the word "tax" in all txt files (```*.txt```) recursively in the ```./technical``` directory. It helps in finding tax statements across a govement docs.
 
 ### 3. Option: `-v` (Invert Match)
 Source: https://man7.org/linux/man-pages/man1/grep.1.html
