@@ -129,9 +129,8 @@ The `-i` option tells `grep` to ignore case distinctions in both the pattern and
 ```
 grep -i "flight" ./technical/911report/chapter-1.txt
 ```
-
-This command searches for the word "flight" in the `chapter-1.txt` file inside the `./technical/911report` directory, ignoring whether "flight" is in uppercase, lowercase, or mixed case. It's useful for finding content without worrying about case sensitivity.
 ![Second Screenshot](f2.png)
+This command searches for the word "flight" in the `chapter-1.txt` file inside the `./technical/911report` directory, ignoring whether "flight" is in uppercase, lowercase, or mixed case. It's useful for finding content without worrying about case sensitivity.
 
 #### Example 2: Searching in multiple files, ignoring case
 
@@ -148,18 +147,18 @@ The `-r` option allows `grep` to search recursively through directories, checkin
 #### Example 1: Recursively searching for a string in all files
 
 ```
-grep -r "function" ./technical/scripts/
+grep -r "bio" ./technical/
 ```
-
-This command searches for the word "function" in all files within the `./technical/scripts` directory and its subdirectories. It's particularly useful for searching through a hierarchy of files.
+![3Screenshot](f4.png)
+This command searches for the word "bio" in all files within the `./technical/` directory and its subdirectories. It's particularly useful for searching through a hierarchy of files.
 
 #### Example 2: Recursively searching with a specific file pattern
 
 ```
-grep -r --include="*.py" "import" ./technical/
+grep -r --include="*.txt" "tax" ./technical/
 ```
-
-This command searches for the word "import" in all Python files (`*.py`) recursively in the `./technical` directory. It helps in finding import statements across a Python project.
+![3Screenshot](f5.png)
+This command searches for the word "tax" in all Python files (`*.txt`) recursively in the `./technical` directory. It helps in finding tax statements across a govement docs.
 
 ### 3. Option: `-v` (Invert Match)
 
