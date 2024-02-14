@@ -113,14 +113,15 @@ public class ListTests {
 ### Why fixing the error?
 
 The fix corrects the logic in the merge method, ensuring that index2 is incremented when elements from list2 are being added to the result list. 
-This corrects the increment of the loop, preventing an infinite loop and ensuring that all elements from both input lists are correctly merged in sorted order. By incrementing index2, the method can successfully complete the merging process, producing a correctly sorted list that includes all elements from both list1 and list2, thus fixed the bug.
+This corrects the increment of the loop, preventing an infinite loop and ensuring that all elements from both input lists are correctly merged in sorted order.
 
 
 ### Researching Commands
 
-For this task, I will focus on the `grep` command, which is used to search text or search the given file for lines containing a match to the provided strings or words. It stands for "Global Regular Expression Print". `grep` is incredibly powerful and versatile, offering a wide range of options to refine searches, match complex patterns, and manipulate output. Here are four interesting command-line options for `grep`, along with two examples for each, demonstrating their use in the context of searching files and directories within `./technical`.
+For this task, I will focus on the `grep` command, which is used to search text or search the given file for lines containing a match to the provided strings or words. It stands for "Global Regular Expression Print". `grep` is incredibly powerful and versatile, offering a wide range of options to refine searches, match complex patterns, and manipulate output.
 
 ### 1. Option: `-i` (Ignore Case)
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 The `-i` option tells `grep` to ignore case distinctions in both the pattern and the input files.
 
@@ -141,7 +142,7 @@ grep -i "flight" ./technical/911report/*.txt
 This command looks for the word "flight" in all `.txt` files within the `./technical/911reports` directory, ignoring case distinctions. It helps in scanning log files for errors without case sensitivity concerns.
 
 ### 2. Option: `-r` or `--recursive`
-
+Source: https://man7.org/linux/man-pages/man1/grep.1.html
 The `-r` option allows `grep` to search recursively through directories, checking all files in the directory and its subdirectories.
 
 #### Example 1: Recursively searching for a string in all files
@@ -161,7 +162,7 @@ grep -r --include="*.txt" "tax" ./technical/
 This command searches for the word "tax" in all Python files (`*.txt`) recursively in the `./technical` directory. It helps in finding tax statements across a govement docs.
 
 ### 3. Option: `-v` (Invert Match)
-
+Source: https://man7.org/linux/man-pages/man1/grep.1.html
 The `-v` option inverts the match, showing only the lines that do not match the given pattern.
 
 #### Example 1: Finding lines that do not contain a specific string
@@ -181,7 +182,7 @@ grep -v "money" ./technical/government/Media/Aid_Gets_7_Million.txt
 This command filters out lines containing "money" from the `Aid_Gets_7_Million.txt` file, useful for focusing on higher-severity messages.
 
 ### 4. Option: `-l` (Files with Matches)
-
+source: https://man7.org/linux/man-pages/man1/grep.1.html
 The `-l` option tells `grep` to only print the names of files with matching lines, once for each file.
 
 #### Example 1: Listing files containing a specific string
