@@ -167,18 +167,18 @@ The `-v` option inverts the match, showing only the lines that do not match the 
 #### Example 1: Finding lines that do not contain a specific string
 
 ```
-grep -v "deprecated" ./technical/documentation.txt
+grep -v "deprecated" ./technical/government/Media/Aid_Gets_7_Million.txt
 ```
-
-This command shows all lines in the `documentation.txt` file that do not contain the word "deprecated". It's useful for filtering out unwanted patterns.
+![3Screenshot](f6.png)
+This command shows all lines in the `Aid_Gets_7_Million.txt` file that do not contain the word "deprecated". It's useful for filtering out unwanted patterns.
 
 #### Example 2: Excluding specific logs
 
 ```
-grep -v "DEBUG" ./technical/logs/app.log
+grep -v "money" ./technical/government/Media/Aid_Gets_7_Million.txt
 ```
-
-This command filters out lines containing "DEBUG" from the `app.log` file, useful for focusing on higher-severity log messages.
+![3Screenshot](f7.png)
+This command filters out lines containing "money" from the `Aid_Gets_7_Million.txt` file, useful for focusing on higher-severity log messages.
 
 ### 4. Option: `-l` (Files with Matches)
 
