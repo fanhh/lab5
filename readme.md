@@ -175,7 +175,7 @@ grep -v "deprecated" ./technical/government/Media/Aid_Gets_7_Million.txt
 ![3Screenshot](f6.png)
 This command shows all lines in the ```Aid_Gets_7_Million.txt``` file that do not contain the word "deprecated". It's useful for filtering out unwanted patterns.
 
-#### Example 2: Excluding specific logs
+#### Example 2: Excluding specific files
 
 ```
 grep -v "money" ./technical/government/Media/Aid_Gets_7_Million.txt
