@@ -143,6 +143,7 @@ This command looks for the word "flight" in all `.txt` files within the `./techn
 
 ### 2. Option: `-r` or `--recursive`
 Source: https://man7.org/linux/man-pages/man1/grep.1.html
+
 The `-r` option allows `grep` to search recursively through directories, checking all files in the directory and its subdirectories.
 
 #### Example 1: Recursively searching for a string in all files
@@ -163,6 +164,7 @@ This command searches for the word "tax" in all Python files (`*.txt`) recursive
 
 ### 3. Option: `-v` (Invert Match)
 Source: https://man7.org/linux/man-pages/man1/grep.1.html
+
 The `-v` option inverts the match, showing only the lines that do not match the given pattern.
 
 #### Example 1: Finding lines that do not contain a specific string
@@ -183,6 +185,7 @@ This command filters out lines containing "money" from the `Aid_Gets_7_Million.t
 
 ### 4. Option: `-l` (Files with Matches)
 source: https://man7.org/linux/man-pages/man1/grep.1.html
+
 The `-l` option tells `grep` to only print the names of files with matching lines, once for each file.
 
 #### Example 1: Listing files containing a specific string
