@@ -187,16 +187,16 @@ The `-l` option tells `grep` to only print the names of files with matching line
 #### Example 1: Listing files containing a specific string
 
 ```
-grep -l "TODO" ./technical/src/*.js
+grep -l "money" ./technical/government/Media/*.txt
 ```
-
-This command lists JavaScript files in `./technical/src` that contain "TODO" comments. It's handy for finding files that need attention.
+![3Screenshot](f8.png)
+This command lists JavaScript files in `./technical/government/Media` that contain "money" comments. It's handy for finding files that need attention.
 
 #### Example 2: Listing files without a specific pattern
 
 ```
-grep -L "SUCCESS" ./technical/reports/*.txt
+grep -L "war" ./technical/government/Media/*.txt
 ```
-
-This command lists `.txt` files in `./technical/reports` that do not contain the word "SUCCESS". It can be used to quickly identify reports indicating failures or missing data.
+![3Screenshot](f9.png)
+This command lists `.txt` files in `./technical/government/Medias` that do not contain the word "war". It can be used to quickly identify reports indicating failures or missing data.
 
