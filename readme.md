@@ -113,8 +113,90 @@ public class ListTests {
 ### Why fixing the error?
 
 The fix corrects the logic in the merge method, ensuring that index2 is incremented when elements from list2 are being added to the result list. 
-This corrects the control flow, preventing an infinite loop and ensuring that all elements from both input lists are correctly merged in sorted order. 
-By incrementing index2, the method can successfully complete the merging process, producing a correctly sorted list that includes all elements from both list1 and list2,
-thus addressing the out-of-memory error and logical flaw in the program.
+This corrects the increment of the loop, preventing an infinite loop and ensuring that all elements from both input lists are correctly merged in sorted order. By incrementing index2, the method can successfully complete the merging process, producing a correctly sorted list that includes all elements from both list1 and list2, thus fixed the bug.
 
+
+### Researching Commands
+
+For this task, I will focus on the `grep` command, which is used to search text or search the given file for lines containing a match to the provided strings or words. It stands for "Global Regular Expression Print". `grep` is incredibly powerful and versatile, offering a wide range of options to refine searches, match complex patterns, and manipulate output. Here are four interesting command-line options for `grep`, along with two examples for each, demonstrating their use in the context of searching files and directories within `./technical`.
+
+### 1. Option: `-i` (Ignore Case)
+
+The `-i` option tells `grep` to ignore case distinctions in both the pattern and the input files.
+
+#### Example 1: Searching for a string in a file, ignoring case
+
+```
+grep -i "network" ./technical/config.txt
+```
+
+This command searches for the word "network" in the `config.txt` file inside the `./technical` directory, ignoring whether "network" is in uppercase, lowercase, or mixed case. It's useful for finding content without worrying about case sensitivity.
+
+#### Example 2: Searching in multiple files, ignoring case
+
+```
+grep -i "error" ./technical/logs/*.log
+```
+
+This command looks for the word "error" in all `.log` files within the `./technical/logs` directory, ignoring case distinctions. It helps in scanning log files for errors without case sensitivity concerns.
+
+### 2. Option: `-r` or `--recursive`
+
+The `-r` option allows `grep` to search recursively through directories, checking all files in the directory and its subdirectories.
+
+#### Example 1: Recursively searching for a string in all files
+
+```
+grep -r "function" ./technical/scripts/
+```
+
+This command searches for the word "function" in all files within the `./technical/scripts` directory and its subdirectories. It's particularly useful for searching through a hierarchy of files.
+
+#### Example 2: Recursively searching with a specific file pattern
+
+```
+grep -r --include="*.py" "import" ./technical/
+```
+
+This command searches for the word "import" in all Python files (`*.py`) recursively in the `./technical` directory. It helps in finding import statements across a Python project.
+
+### 3. Option: `-v` (Invert Match)
+
+The `-v` option inverts the match, showing only the lines that do not match the given pattern.
+
+#### Example 1: Finding lines that do not contain a specific string
+
+```
+grep -v "deprecated" ./technical/documentation.txt
+```
+
+This command shows all lines in the `documentation.txt` file that do not contain the word "deprecated". It's useful for filtering out unwanted patterns.
+
+#### Example 2: Excluding specific logs
+
+```
+grep -v "DEBUG" ./technical/logs/app.log
+```
+
+This command filters out lines containing "DEBUG" from the `app.log` file, useful for focusing on higher-severity log messages.
+
+### 4. Option: `-l` (Files with Matches)
+
+The `-l` option tells `grep` to only print the names of files with matching lines, once for each file.
+
+#### Example 1: Listing files containing a specific string
+
+```
+grep -l "TODO" ./technical/src/*.js
+```
+
+This command lists JavaScript files in `./technical/src` that contain "TODO" comments. It's handy for finding files that need attention.
+
+#### Example 2: Listing files without a specific pattern
+
+```
+grep -L "SUCCESS" ./technical/reports/*.txt
+```
+
+This command lists `.txt` files in `./technical/reports` that do not contain the word "SUCCESS". It can be used to quickly identify reports indicating failures or missing data.
 
