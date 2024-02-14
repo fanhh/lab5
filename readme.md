@@ -178,7 +178,7 @@ This command shows all lines in the `Aid_Gets_7_Million.txt` file that do not co
 grep -v "money" ./technical/government/Media/Aid_Gets_7_Million.txt
 ```
 ![3Screenshot](f7.png)
-This command filters out lines containing "money" from the `Aid_Gets_7_Million.txt` file, useful for focusing on higher-severity log messages.
+This command filters out lines containing "money" from the `Aid_Gets_7_Million.txt` file, useful for focusing on higher-severity messages.
 
 ### 4. Option: `-l` (Files with Matches)
 
