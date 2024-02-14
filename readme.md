@@ -127,18 +127,19 @@ The `-i` option tells `grep` to ignore case distinctions in both the pattern and
 #### Example 1: Searching for a string in a file, ignoring case
 
 ```
-grep -i "network" ./technical/config.txt
+grep -i "flight" ./technical/911report/chapter-1.txt
 ```
 
-This command searches for the word "network" in the `config.txt` file inside the `./technical` directory, ignoring whether "network" is in uppercase, lowercase, or mixed case. It's useful for finding content without worrying about case sensitivity.
+This command searches for the word "flight" in the `chapter-1.txt` file inside the `./technical/911report` directory, ignoring whether "flight" is in uppercase, lowercase, or mixed case. It's useful for finding content without worrying about case sensitivity.
+![Second Screenshot](f2.png)
 
 #### Example 2: Searching in multiple files, ignoring case
 
 ```
-grep -i "error" ./technical/logs/*.log
+grep -i "flight" ./technical/911report/*.txt
 ```
-
-This command looks for the word "error" in all `.log` files within the `./technical/logs` directory, ignoring case distinctions. It helps in scanning log files for errors without case sensitivity concerns.
+![3Screenshot](f3.png)
+This command looks for the word "flight" in all `.txt` files within the `./technical/911reports` directory, ignoring case distinctions. It helps in scanning log files for errors without case sensitivity concerns.
 
 ### 2. Option: `-r` or `--recursive`
 
